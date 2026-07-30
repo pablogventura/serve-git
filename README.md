@@ -18,7 +18,23 @@ tunnel is running.
 
 ## Install
 
-Create a virtual environment (recommended on Debian/Ubuntu):
+### With pipx (recommended)
+
+```bash
+pipx install git+https://github.com/pablogventura/serve-git.git
+```
+
+This installs the `serve-git` and `stop-serve-git` commands globally in an isolated environment.
+
+Upgrade later with:
+
+```bash
+pipx upgrade serve-git
+# or reinstall from GitHub:
+pipx install --force git+https://github.com/pablogventura/serve-git.git
+```
+
+### Editable install (development)
 
 ```bash
 python3 -m venv .venv
@@ -26,10 +42,12 @@ source .venv/bin/activate
 pip install -e ".[dev]"
 ```
 
-Without pip, add the `bin/` directory to your `PATH`:
+### Without packaging
+
+Add the `bin/` directory to your `PATH`:
 
 ```bash
-export PATH="/path/to/servir_git/bin:$PATH"
+export PATH="/path/to/serve-git/bin:$PATH"
 ```
 
 ## Usage
