@@ -21,6 +21,12 @@ tunnel is running.
 ### With pipx (recommended)
 
 ```bash
+pipx install serve-git
+```
+
+Or install directly from GitHub:
+
+```bash
 pipx install git+https://github.com/pablogventura/serve-git.git
 ```
 
@@ -30,8 +36,6 @@ Upgrade later with:
 
 ```bash
 pipx upgrade serve-git
-# or reinstall from GitHub:
-pipx install --force git+https://github.com/pablogventura/serve-git.git
 ```
 
 ### Editable install (development)
